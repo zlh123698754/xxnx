@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxnx.mapper.UserMapper">
+    <select id="queryUserById" parameterType="String" resultType="com.xxnx.entity.user">
+        select * from xxnxzs.user where user_id = #{user_id}
+    </select>
+
+    <select id="querysignById" parameterType="String" resultType="com.xxnx.entity.user">
+        select * from sign_in where user_id = #{user_id}
+    </select>
+
+    <select id="querybaoById" parameterType="String" resultType="com.xxnx.entity.user">
+        select * from bao where user_id = #{user_id}
+    </select>
+
+    <select id="queryusersuoyu"  resultType="com.xxnx.entity.user">
+        select * from user ;
+    </select>
+
+    <select id="querysignsuoyu"  resultType="com.xxnx.entity.user">
+        select * from sign_in ;
+    </select>
+
+
+    <insert  id="addUser" parameterType="com.xxnx.entity.user" >
+        insert into user (user_id, m_data,zhanghao,school_id,user_name)
+        values (#{user_id}, #{m_data}, #{zhanghao},#{school_id},#{user_name})
+    </insert>
+
+    <insert  id="addsign" parameterType="com.xxnx.entity.user" >
+        insert into sign_in (user_id, longitude,latitude,address,address_name)
+        values (#{user_id}, #{longitude}, #{latitude},#{address},#{address_name})
+    </insert>
+
+    <insert  id="addbao" parameterType="com.xxnx.entity.user" >
+        insert into bao (user_id, m1,m2,m3)
+        values (#{user_id}, #{m1}, #{m2},#{m1})
+    </insert>
+
+
+
+
+</mapper>

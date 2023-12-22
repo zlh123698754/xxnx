@@ -1,0 +1,131 @@
+body {
+    background-color: #ecf0f3;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+
+
+}
+
+.header {
+    background-color: #128AFA;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: inset 4px 4px 8px #ecf0f3, inset -4px -4px 8px #ffffff;
+    resize: none;
+    transition: all 0.5s;
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #128AFA;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.form-button:hover {
+    transform: translateY(-3px);
+}
+
+.form-button:active {
+    transform: translateY(3px);
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.map{
+    height: auto;
+    width: 100%;
+}
+
+.amap-sug-result{
+    z-index: 1050;
+    min-height: 80px;
+}
+.input-card{
+    width: 100%;
+}
+input{
+    outline-style: none ;
+    width: 100%;
+}
+
+wenjian {
+    position: absolute;
+    top: 230px;
+    left: 300px;
+    height: 250px;
+    width: 500px;
+    border: 4px ridge #DDD;
+    overflow: scroll;
+    background: #FFF;
+}
+textarea:hover {
+    background: #b0d4f5; /* 悬停时的背景色 */
+    box-shadow: inset 10px 10px 20px #9ec9f2, inset -10px -10px 20px #c3e0f9; /* 悬停时的阴影 */
+    color: white; /* 悬停时的文字颜色 */
+}
+
+textarea:active, textarea:focus {
+    background: #73bdff; /* 点击或聚焦时的背景色 */
+    box-shadow: inset 6px 6px 12px #128AFA, inset -6px -6px 12px #c3e0f9; /* 点击或聚焦时的阴影 */
+    color: white; /* 点击或聚焦时的文字颜色 */
+}
+
+textarea:active::-webkit-resizer, textarea:focus::-webkit-resizer {
+    border: 2px dashed #aedbf5; /* 调整大小时的边框 */
+    box-shadow: 0 0 10px #aedbf5; /* 调整大小时的阴影 */
+    color: #bebebe; /* 调整大小时的文字颜色 */
+}
